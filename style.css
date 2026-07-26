@@ -266,55 +266,65 @@ nav ul li a:hover::after{
 }
 
 /* ==========================
-   HERO SKILLS
+   HERO TECH BADGES
 ========================== */
 
 .hero-skills{
-
     display:flex;
-
-    flex-wrap:wrap;
-
-    gap:15px;
-
-    margin-top:35px;
-
+    align-items:center;
+    gap:12px;
+    margin-top:30px;
 }
 
 .hero-skills span{
-
     display:flex;
-
     align-items:center;
+    gap:7px;
 
-    gap:8px;
-
-    padding:10px 18px;
-
-    border:1px solid rgba(255,255,255,.12);
+    padding:8px 14px;
 
     border-radius:50px;
 
-    background:rgba(255,255,255,.05);
+    font-size:14px;
+    font-weight:500;
 
-    color:#e2e8f0;
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
 
     transition:.3s;
 
+    cursor:pointer;
+}
+
+.hero-skills span i{
+    font-size:15px;
+}
+
+.hero-skills span:nth-child(1){
+    background:rgba(149,191,71,.18);
+    color:#95BF47;
+}
+
+.hero-skills span:nth-child(2){
+    background:rgba(33,117,155,.18);
+    color:#21759B;
+}
+
+.hero-skills span:nth-child(3){
+    background:rgba(145,70,255,.18);
+    color:#9146FF;
+}
+
+.hero-skills span:nth-child(4){
+    background:rgba(0,173,181,.18);
+    color:#00ADB5;
 }
 
 .hero-skills span:hover{
 
-    transform:translateY(-5px);
+    transform:translateY(-4px);
 
-    background:#38bdf8;
-
-    color:white;
-
-}
-
-.hero-skills i{
-
-    font-size:18px;
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
 
 }
