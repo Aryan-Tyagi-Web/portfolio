@@ -115,17 +115,25 @@ nav ul li a:hover::after{
 }
 
 .hero-buttons{
-    margin-top:40px;
+    margin-top:35px;
     display:flex;
-    gap:20px;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
 }
 
 .btn-primary,
 .btn-secondary{
-    padding:15px 30px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:170px;
+    height:52px;
+    padding:0 24px;
     text-decoration:none;
-    border-radius:8px;
+    border-radius:10px;
     font-weight:600;
+    font-size:16px;
 }
 
 .btn-primary{
@@ -308,5 +316,52 @@ nav ul li a:hover::after{
 .hero-skills i{
 
     font-size:18px;
+
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width:768px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:60px 8%;
+    }
+
+    .hero-left{
+        max-width:100%;
+    }
+
+    .hero-left h1{
+        font-size:48px;
+    }
+
+    .hero-left h2{
+        font-size:28px;
+    }
+
+    .hero-right{
+        margin-top:50px;
+    }
+
+    .circle{
+        width:280px;
+        height:280px;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+    .hero-skills{
+        justify-content:center;
+    }
+
+    .stats{
+        flex-direction:column;
+    }
 
 }
