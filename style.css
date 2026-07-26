@@ -175,4 +175,27 @@ nav ul li a:hover::after{
     height:420px;
     border-radius:50%;
     background:linear-gradient(135deg,#38bdf8,#7c3aed);
+
+    box-shadow:
+    0 0 40px rgba(56,189,248,.30),
+    0 0 80px rgba(124,58,237,.30),
+    0 0 120px rgba(56,189,248,.20);
+
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
 }
