@@ -232,3 +232,65 @@
     min-height:70px;
 
 }
+
+.project-tags{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-bottom:18px;
+
+}
+
+.project-type{
+
+    padding:7px 14px;
+
+    border-radius:50px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.agency{
+
+    background:#FFE8CC;
+
+    color:#D97706;
+
+}
+
+.hotel{
+
+    background:#F3E8FF;
+
+    color:#7E22CE;
+
+}
+
+.ecommerce{
+
+    background:#DCFCE7;
+
+    color:#15803D;
+
+}
+
+.business{
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+}
+
+.spiritual{
+
+    background:#FCE7F3;
+
+    color:#BE185D;
+
+}
