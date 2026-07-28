@@ -234,25 +234,25 @@
 }
 
 .project-tags{
-
-    display:flex;
-
-    gap:10px;
-
-    margin-bottom:18px;
-
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
 }
 
 .project-type{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    padding:7px 14px;
+    min-width: 110px;   /* sab badges same width */
+    height: 38px;
 
-    border-radius:50px;
+    padding: 0 16px;
+    border-radius: 999px;
 
-    font-size:12px;
-
-    font-weight:600;
-
+    font-size: 12px;
+    font-weight: 600;
 }
 
 .agency{
