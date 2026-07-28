@@ -235,9 +235,10 @@
 
 .project-tags{
     display: flex;
-    align-items: center;
+    align-items: flex-start;   /* center ki jagah */
     gap: 10px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .project-type{
@@ -293,4 +294,23 @@
 
     color:#BE185D;
 
+}
+
+
+.project-type,
+.project-category{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 38px;
+    min-width: 110px;
+
+    padding: 0 16px;
+    border-radius: 999px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    box-sizing: border-box;
 }
