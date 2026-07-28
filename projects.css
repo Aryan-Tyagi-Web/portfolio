@@ -49,29 +49,43 @@
 
 .project-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-12px);
 
-    box-shadow:0 20px 45px rgba(0,0,0,.35);
+    border-color:#38bdf8;
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.35),
+        0 0 0 1px rgba(56,189,248,.25);
 
 }
 
 .project-image{
 
+    position:relative;
+
     height:240px;
 
-    background:linear-gradient(135deg,#38bdf8,#7c3aed);
+    overflow:hidden;
 
-    display:flex;
+    background:#111827;
 
-    align-items:center;
+}
 
-    justify-content:center;
+.project-image img{
 
-    font-size:24px;
+    width:100%;
 
-    color:white;
+    height:100%;
 
-    font-weight:700;
+    object-fit:cover;
+
+    transition:.5s;
+
+}
+
+.project-card:hover .project-image img{
+
+    transform:scale(1.08);
 
 }
 
@@ -138,5 +152,83 @@
 .project-buttons a:hover{
 
     background:#0ea5e9;
+
+}
+
+.project-category{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:7px 14px;
+
+    border-radius:50px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.shopify{
+
+    background:rgba(149,191,71,.18);
+
+    color:#95BF47;
+
+}
+
+.wordpress{
+
+    background:rgba(33,117,155,.18);
+
+    color:#21759B;
+
+}
+
+.project-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:18px;
+
+    text-decoration:none;
+
+    color:#38bdf8;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-link i{
+
+    transition:.3s;
+
+}
+
+.project-link:hover i{
+
+    transform:translateX(6px);
+
+}
+
+.project-content p{
+
+    color:#94a3b8;
+
+    line-height:1.7;
+
+    margin-top:10px;
+
+    min-height:70px;
 
 }
