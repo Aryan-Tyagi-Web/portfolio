@@ -3,7 +3,7 @@
 ========================== */
 
 .projects{
-    padding:100px 8%;
+    padding:100px 5%;
     background:#111827;
 }
 
@@ -29,7 +29,7 @@
 
 .project-grid{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:30px;
 }
 
@@ -93,7 +93,8 @@
 
     position:relative;
 
-    height:240px;
+    aspect-ratio:16/10;
+    height:auto;
 
     overflow:hidden;
 
@@ -121,7 +122,7 @@
 
 .project-content{
 
-    padding:25px;
+    padding:20px;
      position: relative;
     z-index: 2;
 
@@ -269,26 +270,28 @@
 }
 
 .project-tags{
-    display: flex;
-    align-items: flex-start;   /* center ki jagah */
-    gap: 10px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:18px;
+    flex-wrap:nowrap;
 }
 
 .project-type{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
 
-    min-width: 110px;   /* sab badges same width */
-    height: 38px;
+    height:36px;
 
-    padding: 0 16px;
-    border-radius: 999px;
+    padding:0 14px;
 
-    font-size: 12px;
-    font-weight: 600;
+    border-radius:999px;
+
+    white-space:nowrap;
+
+    font-size:12px;
+    font-weight:600;
 }
 
 .agency{
@@ -334,20 +337,25 @@
 
 .project-type,
 .project-category{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
 
-    height: 38px;
-    min-width: 110px;
+    display:inline-flex;
 
-    padding: 0 16px;
-    border-radius: 999px;
+    align-items:center;
 
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1;
-    box-sizing: border-box;
+    justify-content:center;
+
+    height:36px;
+
+    padding:0 14px;
+
+    border-radius:999px;
+
+    white-space:nowrap;
+
+    font-size:12px;
+
+    font-weight:600;
+
 }
 
 .project-image{
