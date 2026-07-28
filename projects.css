@@ -272,8 +272,8 @@
 .project-tags{
     display:flex;
     align-items:center;
-    gap:10px;
-    margin-bottom:18px;
+    gap:8px;
+    margin-bottom:20px;
     flex-wrap:nowrap;
 }
 
@@ -337,25 +337,21 @@
 
 .project-type,
 .project-category{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    display:inline-flex;
+    width: 110px;          /* Dono badges same width */
+    height: 36px;
 
-    align-items:center;
+    border-radius: 999px;
 
-    justify-content:center;
+    font-size: 12px;
+    font-weight: 600;
 
-    height:36px;
-
-    padding:0 14px;
-
-    border-radius:999px;
-
-    white-space:nowrap;
-
-    font-size:12px;
-
-    font-weight:600;
-
+    padding: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .project-image{
