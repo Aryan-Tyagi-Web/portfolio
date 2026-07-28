@@ -73,6 +73,8 @@
 
     gap: 10px;
 
+    min-width: 180px;
+
 }
 
 .btn-primary{
@@ -101,4 +103,9 @@
 
     background:#1e293b;
 
+}
+
+.btn-primary i,
+.btn-secondary i{
+    font-size: 16px;
 }
