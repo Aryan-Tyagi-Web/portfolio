@@ -381,3 +381,10 @@ nav ul li a:hover::after{
     font-size:18px;
     font-weight:600;
 }
+
+/* Remove blue tap highlight on mobile */
+a,
+button,
+.menu-toggle{
+    -webkit-tap-highlight-color: transparent;
+}
