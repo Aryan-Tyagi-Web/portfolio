@@ -84,3 +84,25 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => {
     observer.observe(section);
 });
+
+menuLinks.forEach(link => {
+
+    link.addEventListener("click", function(e){
+
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute("href"));
+
+        if(target){
+
+            target.scrollIntoView({
+                behavior: "smooth"
+            });
+
+            history.replaceState(null, null, " ");
+
+        }
+
+    });
+
+});
