@@ -189,7 +189,7 @@ nav ul li a.active::after{
 
 .logo img{
     display:block;
-    height:80px;   /* 60-72px ke beech adjust kar sakta hai */
+    height:60px;   /* 60-72px ke beech adjust kar sakta hai */
     width:auto;
     object-fit:contain;
 }
