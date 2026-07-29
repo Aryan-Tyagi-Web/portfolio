@@ -51,3 +51,36 @@ menuOverlay.addEventListener("click", () => {
     menuOverlay.classList.remove("active");
     document.body.classList.remove("menu-open");
 });
+
+const sections = document.querySelectorAll("section[id]");
+const menuLinks = document.querySelectorAll("nav ul li a");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            menuLinks.forEach(link => {
+                link.classList.remove("active");
+            });
+
+            const activeLink = document.querySelector(
+                `nav ul li a[href="#${entry.target.id}"]`
+            );
+
+            if(activeLink){
+                activeLink.classList.add("active");
+            }
+
+        }
+
+    });
+
+},{
+    threshold:0.4
+});
+
+sections.forEach(section => {
+    observer.observe(section);
+});
