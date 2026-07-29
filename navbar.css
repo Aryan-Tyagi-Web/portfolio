@@ -107,8 +107,12 @@
     transform:none;
 }
 
-nav{
+    nav{
     position:relative;
+}
+
+    .logo img{
+    height:44px;
 }
 
 }
@@ -168,4 +172,22 @@ nav ul li a.active{
 
 nav ul li a.active::after{
     width:100%;
+}
+
+
+.logo a{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+}
+
+.logo img{
+    height:52px;
+    width:auto;
+    display:block;
+    transition:.3s ease;
+}
+
+.logo img:hover{
+    transform:scale(1.05);
 }
