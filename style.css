@@ -82,7 +82,7 @@ nav ul li a:hover::after{
 }
 
 .hero{
-    min-height:90vh;
+    min-height:calc(100vh - 88px);
     display:flex;
     justify-content:space-between;
     align-items:center;
