@@ -197,3 +197,10 @@ nav ul li a.active::after{
 .logo img:hover{
     transform:scale(1.05);
 }
+
+.footer-about img{
+    display:block;
+    height:75px;
+    width:auto;
+    margin-bottom:18px;
+}
