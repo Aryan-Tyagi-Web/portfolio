@@ -53,3 +53,8 @@
     }
 
 }
+
+
+.menu-toggle.active i::before{
+    content: "\f00d";
+}
