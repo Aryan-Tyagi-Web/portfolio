@@ -40,10 +40,16 @@
     transform:translateY(-15px);
 
     transition:.3s;
-}
+    }
 
     .menu-toggle{
         display:block;
+    }
+
+    nav ul.active{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
     }
 
 }
