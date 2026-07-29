@@ -87,6 +87,8 @@ nav ul li a:hover::after{
     justify-content:space-between;
     align-items:center;
     padding:0 8%;
+
+    scroll-margin-top:90px;
 }
 
 .hero-left{
