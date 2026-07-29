@@ -187,9 +187,9 @@ nav ul li a.active::after{
 }
 
 .logo img{
-    display:block;
-    height:48px;
+    height:80px;
     width:auto;
+    display:block;
 }
 
 .logo img:hover{
