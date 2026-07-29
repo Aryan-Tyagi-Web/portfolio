@@ -123,3 +123,12 @@ nav{
     opacity:1;
     visibility:visible;
 }
+
+
+nav ul li a.active{
+    color:#3B82F6;
+}
+
+nav ul li a.active::after{
+    width:100%;
+}
