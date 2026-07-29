@@ -386,3 +386,18 @@ nav ul li a:hover::after{
 *{
     -webkit-tap-highlight-color: transparent;
 }
+
+@media (max-width:768px){
+    header{
+    width:100%;
+    padding:20px 8%;
+    background:rgba(17,24,39,0.75);
+    backdrop-filter:blur(15px);
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+}
