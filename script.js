@@ -21,6 +21,7 @@ const navLinks = document.querySelectorAll("nav ul a");
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
         navMenu.classList.remove("active");
+        menuToggle.classList.remove("active");
     });
 });
 
@@ -31,6 +32,7 @@ document.addEventListener("click", (e) => {
         !menuToggle.contains(e.target)
     ) {
         navMenu.classList.remove("active");
+        menuToggle.classList.remove("active");
     }
 
 });
