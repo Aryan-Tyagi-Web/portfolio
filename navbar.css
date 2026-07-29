@@ -188,7 +188,7 @@ nav ul li a.active::after{
 
 .logo img{
     display:block;
-    height:48px;
+    height:100px;
     width:auto;
 }
 
