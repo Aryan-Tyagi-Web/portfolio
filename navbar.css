@@ -182,7 +182,7 @@ nav ul li a.active::after{
 }
 
 .logo img{
-    height:52px;
+    height:100px;
     width:auto;
     display:block;
     transition:.3s ease;
