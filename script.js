@@ -53,7 +53,7 @@ menuOverlay.addEventListener("click", () => {
 });
 
 const sections = document.querySelectorAll("section[id]");
-const menuLinks = document.querySelectorAll("nav ul li a");
+const menuLinks = document.querySelectorAll('a[href^="#"]');
 
 const observer = new IntersectionObserver((entries) => {
 
