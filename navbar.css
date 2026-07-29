@@ -16,6 +16,8 @@
     font-size:28px;
     color:#fff;
     cursor:pointer;
+    position:relative;
+    z-index:1001;
 }
 
 @media (max-width:768px){
@@ -50,6 +52,10 @@
     opacity:1;
     visibility:visible;
     transform:none;
+}
+
+nav{
+    position:relative;
 }
 
 }
