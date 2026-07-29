@@ -44,3 +44,10 @@ document.addEventListener("click", (e) => {
     }
 
 });
+
+menuOverlay.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+    menuToggle.classList.remove("active");
+    menuOverlay.classList.remove("active");
+    document.body.classList.remove("menu-open");
+});
