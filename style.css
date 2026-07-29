@@ -386,3 +386,7 @@ nav ul li a:hover::after{
 *{
     -webkit-tap-highlight-color: transparent;
 }
+
+body.menu-open{
+    overflow:hidden;
+}

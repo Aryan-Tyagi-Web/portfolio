@@ -13,6 +13,7 @@ const navMenu = document.querySelector("nav ul");
 menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
     menuToggle.classList.toggle("active");
+    document.body.classList.toggle("menu-open");
 });
 
 
@@ -22,6 +23,7 @@ navLinks.forEach(link => {
     link.addEventListener("click", () => {
         navMenu.classList.remove("active");
         menuToggle.classList.remove("active");
+        document.body.classList.remove("menu-open");
     });
 });
 
@@ -33,6 +35,7 @@ document.addEventListener("click", (e) => {
     ) {
         navMenu.classList.remove("active");
         menuToggle.classList.remove("active");
+        document.body.classList.remove("menu-open");
     }
 
 });
