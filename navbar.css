@@ -80,6 +80,9 @@
     align-items:center;
     gap:30px;
 
+    opacity:1;
+    visibility:visible;
+
     transition:.35s ease;
 
     z-index:999;
