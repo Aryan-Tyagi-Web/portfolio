@@ -176,20 +176,22 @@ nav ul li a.active::after{
 
 
 .logo{
-    margin:0;
-    padding:0;
-    line-height:0;
+    display:flex;
+    align-items:center;
+    flex-shrink:0;
 }
 
 .logo a{
     display:flex;
     align-items:center;
+    text-decoration:none;
 }
 
 .logo img{
-    height:80px;
-    width:auto;
     display:block;
+    height:70px;   /* 60-72px ke beech adjust kar sakta hai */
+    width:auto;
+    object-fit:contain;
 }
 
 .logo img:hover{
