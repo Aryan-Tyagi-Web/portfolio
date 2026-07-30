@@ -169,30 +169,27 @@ counters.forEach(counter => counterObserver.observe(counter));
 
 const scrollTopBtn = document.querySelector(".scroll-top");
 
-window.addEventListener("scroll", () => {
+if (scrollTopBtn) {
 
-    if(window.scrollY > 400){
+    window.addEventListener("scroll", () => {
 
-        scrollTopBtn.classList.add("show");
-
-    }else{
-
-        scrollTopBtn.classList.remove("show");
-
-    }
-
-});
-
-scrollTopBtn.addEventListener("click", (e) => {
-
-    e.preventDefault();
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
+        if (window.scrollY > 400) {
+            scrollTopBtn.classList.add("show");
+        } else {
+            scrollTopBtn.classList.remove("show");
+        }
 
     });
 
-});
+    scrollTopBtn.addEventListener("click", (e) => {
+
+        e.preventDefault();
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+}

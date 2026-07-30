@@ -428,8 +428,8 @@ body.menu-open{
 
     box-shadow:0 10px 25px rgba(59,130,246,.35);
 
-    opacity:0;
-    visibility:hidden;
+    opacity:1 !important;
+    visibility:visible !important;
 
     transform:translateY(20px);
 
