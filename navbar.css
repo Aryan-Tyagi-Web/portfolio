@@ -72,16 +72,16 @@
     width:280px;
     height:100vh;
 
-    background:rgba(10,15,30,.97);
-backdrop-filter:blur(14px);
--webkit-backdrop-filter:blur(14px);
+    background:rgba(10,15,30,.995);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
 
-border-left:1px solid rgba(255,255,255,.08);
-box-shadow:-15px 0 40px rgba(0,0,0,.45);
+    border-left:1px solid rgba(255,255,255,.08);
+    box-shadow:-15px 0 40px rgba(0,0,0,.45);
 
     border-left:1px solid rgba(255,255,255,.08);
 
-    box-shadow:-10px 0 35px rgba(0,0,0,.35);
+    box-shadow:-10px 0 35px rgba(0,0,0,.45);
 
     padding:80px 30px;
 
