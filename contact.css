@@ -175,21 +175,15 @@
 
     .whatsapp-float{
 
-        position:fixed;
-
-        right:18px !important;
-        bottom:18px !important;
-
-        left:auto !important;
-
         width:56px;
         height:56px;
 
-        display:flex;
-        justify-content:center;
-        align-items:center;
+        right:16px;
+        bottom:16px;
 
-        z-index:9997;
+        font-size:30px;
+
+        left:auto;
 
     }
 
