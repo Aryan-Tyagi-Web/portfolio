@@ -402,3 +402,189 @@ body.menu-open{
     color:#3B82F6;
 
 }
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    section{
+        padding:70px 20px;
+    }
+
+    h1{
+        font-size:40px !important;
+    }
+
+    h2{
+        font-size:30px !important;
+    }
+
+    p{
+        font-size:15px;
+        line-height:1.7;
+    }
+
+    /* Header */
+
+    header{
+        padding:15px 20px;
+    }
+
+    /* Hero */
+
+    .hero{
+
+        flex-direction:column-reverse;
+
+        justify-content:center;
+
+        text-align:center;
+
+        gap:40px;
+
+        padding:40px 20px;
+
+        min-height:auto;
+
+    }
+
+    .hero-left,
+    .hero-right{
+
+        width:100%;
+        max-width:100%;
+
+    }
+
+    .hero-left h1{
+        font-size:42px !important;
+    }
+
+    .hero-left h2{
+        font-size:24px !important;
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+        flex-direction:column;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:100%;
+
+        max-width:300px;
+
+    }
+
+    .hero-skills{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .circle{
+
+        width:280px;
+
+        height:280px;
+
+    }
+
+    /* Stats */
+
+    .stats{
+
+        flex-direction:column;
+
+        padding:60px 20px;
+
+    }
+
+    /* Technologies */
+
+    .technologies{
+
+        padding:70px 20px;
+
+    }
+
+    .tech-grid{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:15px;
+
+    }
+
+    .tech-card{
+
+        padding:18px;
+
+    }
+
+    .tech-card span{
+
+        font-size:15px;
+
+    }
+
+    /* Common Grid */
+
+    .about,
+    .contact-box,
+    .footer-container{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:30px;
+
+        text-align:center;
+
+    }
+
+    /* Projects */
+
+    .project-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* Services */
+
+    .services-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* Footer */
+
+    .footer-container{
+
+        text-align:center;
+
+    }
+
+    .footer-social{
+
+        justify-content:center;
+
+    }
+
+}
