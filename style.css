@@ -649,48 +649,6 @@ font-size:28px;
 
 }
 
-.footer-social{
-
-    display:flex !important;
-
-    flex-direction:row !important;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:16px;
-
-    flex-wrap:nowrap;
-
-}
-
-.footer-about{
-
-    text-align:center;
-
-}
-
-.footer-about .logo{
-
-    display:flex;
-
-    justify-content:center;
-
-}
-
-.footer-about img{
-
-    width:150px;
-
-    height:auto;
-
-}
-
-}
-
-}
-
 }
 
 *{
