@@ -408,7 +408,7 @@ body.menu-open{
     position:fixed;
 
     left:24px;
-    bottom:24px;
+    bottom:30px;
 
     width:58px;
     height:58px;
@@ -431,7 +431,7 @@ body.menu-open{
     opacity:1 !important;
     visibility:visible !important;
 
-    transform:translateY(20px);
+    transform:translateY(0) scale(1);
 
     transition:.35s ease;
 
