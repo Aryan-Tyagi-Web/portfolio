@@ -209,3 +209,19 @@ nav ul li a.active::after{
     width:auto;
     margin-bottom:18px;
 }
+
+
+.scroll-progress{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:0%;
+    height:4px;
+
+    background:linear-gradient(90deg,#3B82F6,#06B6D4);
+
+    z-index:99999;
+
+    transition:width .08s linear;
+}
