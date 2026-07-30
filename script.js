@@ -134,7 +134,7 @@ const counterObserver = new IntersectionObserver((entries) => {
 
         let current = 0;
 
-        const duration = 4000; // 4 seconds
+        const duration = 3000; // 3 seconds
         const increment = target / (duration / 16);
 
         const updateCounter = () => {
