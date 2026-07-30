@@ -172,31 +172,35 @@ const hero = document.querySelector(".hero");
 
 if (scrollTopBtn && hero) {
 
-    // Initial state
+    // Page load pe hidden rahe
     scrollTopBtn.classList.remove("show");
 
-    window.addEventListener("scroll", () => {
+    const toggleScrollTop = () => {
 
-        const heroHeight = hero.offsetHeight - 100;
-
-        if (window.scrollY > heroHeight) {
+        if (window.scrollY > hero.offsetHeight) {
             scrollTopBtn.classList.add("show");
         } else {
             scrollTopBtn.classList.remove("show");
         }
 
-    });
+    };
 
-    scrollTopBtn.addEventListener("click", (e) => {
+    // Initial check
+    toggleScrollTop();
+
+    // Scroll pe check
+    window.addEventListener("scroll", toggleScrollTop);
+
+    scrollTopBtn.addEventListener("click", function (e) {
 
         e.preventDefault();
-
-        history.replaceState(null, "", window.location.pathname);
 
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
+
+        history.replaceState(null, "", window.location.pathname);
 
     });
 
