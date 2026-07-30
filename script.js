@@ -172,45 +172,31 @@ const hero = document.querySelector(".hero");
 
 if (scrollTopBtn && hero) {
 
-    // Page load pe hidden rahe
-    scrollTopBtn.classList.remove("show");
+    function toggleScrollTop() {
 
-    const toggleScrollTop = () => {
+        const heroRect = hero.getBoundingClientRect();
 
-        if (window.scrollY > hero.offsetHeight) {
+        if (heroRect.bottom <= 100) {
             scrollTopBtn.classList.add("show");
         } else {
             scrollTopBtn.classList.remove("show");
         }
 
-    };
+    }
 
-    // Initial check
-    toggleScrollTop();
-
-    // Scroll pe check
     window.addEventListener("scroll", toggleScrollTop);
 
-    scrollTopBtn.addEventListener("click", function (e) {
+    toggleScrollTop();
+
+    scrollTopBtn.addEventListener("click", function(e){
 
         e.preventDefault();
 
         window.scrollTo({
-            top: 0,
-            behavior: "smooth"
+            top:0,
+            behavior:"smooth"
         });
-
-        history.replaceState(null, "", window.location.pathname);
 
     });
 
-}
-
-
-const heroBottom = hero.offsetTop + hero.offsetHeight;
-
-if (window.scrollY >= heroBottom - 100) {
-    scrollTopBtn.classList.add("show");
-} else {
-    scrollTopBtn.classList.remove("show");
 }
