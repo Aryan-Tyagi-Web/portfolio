@@ -167,36 +167,30 @@ const counterObserver = new IntersectionObserver((entries) => {
 
 counters.forEach(counter => counterObserver.observe(counter));
 
-const scrollTopBtn = document.querySelector(".scroll-top");
-const hero = document.querySelector(".hero");
+const backToTop = document.getElementById("backToTop");
 
-if (scrollTopBtn && hero) {
+window.addEventListener("scroll", () => {
 
-    function toggleScrollTop() {
+    if (window.scrollY > 700) {
 
-        const heroRect = hero.getBoundingClientRect();
+        backToTop.classList.add("show");
 
-        if (heroRect.bottom <= 100) {
-            scrollTopBtn.classList.add("show");
-        } else {
-            scrollTopBtn.classList.remove("show");
-        }
+    } else {
+
+        backToTop.classList.remove("show");
 
     }
 
-    window.addEventListener("scroll", toggleScrollTop);
+});
 
-    toggleScrollTop();
+backToTop.addEventListener("click", () => {
 
-    scrollTopBtn.addEventListener("click", function(e){
+    window.scrollTo({
 
-        e.preventDefault();
+        top:0,
 
-        window.scrollTo({
-            top:0,
-            behavior:"smooth"
-        });
+        behavior:"smooth"
 
     });
 
-}
+});
