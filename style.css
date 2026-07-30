@@ -390,3 +390,15 @@ nav ul li a:hover::after{
 body.menu-open{
     overflow:hidden;
 }
+
+.stat-box h2,
+.stat-box span{
+
+    display:inline-block;
+
+    font-size:56px;
+    font-weight:700;
+
+    color:#3B82F6;
+
+}
