@@ -168,34 +168,30 @@ const counterObserver = new IntersectionObserver((entries) => {
 counters.forEach(counter => counterObserver.observe(counter));
 
 const scrollTopBtn = document.querySelector(".scroll-top");
+const hero = document.querySelector(".hero");
 
-if (scrollTopBtn) {
+if (scrollTopBtn && hero) {
+
+    // Initial state
+    scrollTopBtn.classList.remove("show");
 
     window.addEventListener("scroll", () => {
 
-        const hero = document.querySelector(".hero");
+        const heroHeight = hero.offsetHeight - 100;
 
-    window.addEventListener("scroll", () => {
-
-    const heroHeight = hero.offsetHeight - 100;
-
-    if(window.scrollY > heroHeight){
-
-        scrollTopBtn.classList.add("show");
-
-    }else{
-
-        scrollTopBtn.classList.remove("show");
-
-    }
-
-});
+        if (window.scrollY > heroHeight) {
+            scrollTopBtn.classList.add("show");
+        } else {
+            scrollTopBtn.classList.remove("show");
+        }
 
     });
 
     scrollTopBtn.addEventListener("click", (e) => {
 
         e.preventDefault();
+
+        history.replaceState(null, "", window.location.pathname);
 
         window.scrollTo({
             top: 0,
