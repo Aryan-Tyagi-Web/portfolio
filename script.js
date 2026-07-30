@@ -134,7 +134,8 @@ const counterObserver = new IntersectionObserver((entries) => {
 
         let current = 0;
 
-        const increment = Math.ceil(target / 60);
+        const duration = 4000; // 4 seconds
+        const increment = target / (duration / 16);
 
         const updateCounter = () => {
 
@@ -146,7 +147,7 @@ const counterObserver = new IntersectionObserver((entries) => {
 
             } else {
 
-                counter.innerText = current;
+                counter.innerText = Math.floor(current);
 
                 requestAnimationFrame(updateCounter);
 
@@ -161,7 +162,7 @@ const counterObserver = new IntersectionObserver((entries) => {
     });
 
 }, {
-    threshold:0.5
+    threshold: 0.5
 });
 
 counters.forEach(counter => counterObserver.observe(counter));
