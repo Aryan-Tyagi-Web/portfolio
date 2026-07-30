@@ -673,14 +673,6 @@ overflow-x:hidden;
 
 }
 
-html{
-    overflow-x:hidden;
-}
-
-body{
-    width:100%;
-}
-
 body.menu-open{
 
     overflow:hidden;
