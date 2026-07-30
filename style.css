@@ -402,3 +402,73 @@ body.menu-open{
     color:#3B82F6;
 
 }
+
+.scroll-top{
+
+    position:fixed;
+
+    left:24px;
+    bottom:24px;
+
+    width:58px;
+    height:58px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#3B82F6;
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    box-shadow:0 10px 25px rgba(59,130,246,.35);
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateY(20px);
+
+    transition:.35s ease;
+
+    z-index:9999;
+
+}
+
+.scroll-top.show{
+
+    opacity:1;
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+.scroll-top:hover{
+
+    transform:translateY(-5px);
+
+    background:#2563EB;
+
+}
+
+
+@media(max-width:768px){
+
+    .scroll-top{
+
+        left:18px;
+        bottom:18px;
+
+        width:54px;
+        height:54px;
+
+        font-size:20px;
+
+    }
+
+}
