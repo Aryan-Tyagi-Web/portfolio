@@ -680,3 +680,13 @@ html{
 body{
     width:100%;
 }
+
+body.menu-open{
+
+    overflow:hidden;
+
+    height:100vh;
+
+    touch-action:none;
+
+}
