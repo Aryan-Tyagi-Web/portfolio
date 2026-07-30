@@ -205,3 +205,12 @@ if (scrollTopBtn && hero) {
     });
 
 }
+
+
+const heroBottom = hero.offsetTop + hero.offsetHeight;
+
+if (window.scrollY >= heroBottom - 100) {
+    scrollTopBtn.classList.add("show");
+} else {
+    scrollTopBtn.classList.remove("show");
+}
