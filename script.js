@@ -20,12 +20,6 @@ menuToggle.addEventListener("click", () => {
 
     document.body.classList.toggle("menu-open");
 
-    if(navMenu.classList.contains("active")){
-        document.body.style.overflow = "hidden";
-    }else{
-        document.body.style.overflow = "";
-    }
-
 });
 
 
@@ -37,7 +31,6 @@ navLinks.forEach(link => {
         menuToggle.classList.remove("active");
         menuOverlay.classList.remove("active");
         document.body.classList.remove("menu-open");
-        document.body.style.overflow = "";
     });
 });
 
@@ -51,7 +44,6 @@ document.addEventListener("click", (e) => {
         menuToggle.classList.remove("active");
         menuOverlay.classList.remove("active");
         document.body.classList.remove("menu-open");
-        document.body.style.overflow = "";
     }
 
 });
@@ -61,7 +53,6 @@ menuOverlay.addEventListener("click", () => {
     menuToggle.classList.remove("active");
     menuOverlay.classList.remove("active");
     document.body.classList.remove("menu-open");
-    document.body.style.overflow = "";
 });
 
 const sections = document.querySelectorAll("section[id]");
