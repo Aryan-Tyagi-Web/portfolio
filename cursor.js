@@ -1,5 +1,3 @@
-alert("cursor.js loaded");
-
 const dot = document.querySelector(".cursor-dot");
 const ring = document.querySelector(".cursor-ring");
 
