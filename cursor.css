@@ -2,9 +2,15 @@
 @media (hover: none), (pointer: coarse){
     .cursor-dot,
     .cursor-ring{
-        display:none !important;
-    }
 
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    will-change:transform;
+
+    }
     body{
         cursor:auto;
     }
