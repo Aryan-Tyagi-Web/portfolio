@@ -991,3 +991,10 @@ body{
     font:inherit;
     font-weight:inherit;
 }
+
+.stat-icon{
+    font-size:34px;
+    margin-bottom:18px;
+    color:#3b82f6;
+    display:block;
+}
