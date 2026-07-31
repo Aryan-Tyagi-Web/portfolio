@@ -941,16 +941,3 @@ body.menu-open{
     touch-action:none;
 
 }
-
-@media (max-width:768px){
-
-    body{
-        padding-top:0 !important;
-    }
-
-    .hero{
-        min-height:100vh;
-        padding-top:80px !important;
-    }
-
-}
