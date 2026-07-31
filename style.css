@@ -1037,3 +1037,16 @@ body{
     color:#00D4FF;
     text-shadow:0 0 18px rgba(0,212,255,.5);
 }
+
+@media (max-width:768px){
+
+    .counter{
+        font-size:48px;
+    }
+
+    .suffix{
+        font-size:24px;
+        margin-bottom:5px;
+    }
+
+}
