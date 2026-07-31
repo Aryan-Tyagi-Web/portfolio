@@ -23,11 +23,20 @@ header{
     background:rgba(17,24,39,0.75);
     backdrop-filter:blur(15px);
 
-    position:sticky !important;
+    position:fixed;
     top:0;
+    left:0;
     z-index:1000;
 
     border-bottom:1px solid rgba(255,255,255,.08);
+    transition:all .35s ease;
+}
+
+header.sticky{
+    background:rgba(17,24,39,.88);
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
 }
 
 nav{
