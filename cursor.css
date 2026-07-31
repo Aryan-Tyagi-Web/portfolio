@@ -21,8 +21,7 @@ body{
 .cursor-dot,
 .cursor-outline{
     position: fixed;
-    top: 0;
-    left: 0;
+    inset:0 auto auto 0;
     pointer-events: none;
     transform: translate(-50%, -50%);
     z-index: 99999;

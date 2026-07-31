@@ -200,23 +200,26 @@ if (cursorDot && cursorOutline) {
 
     // Mouse Position
     window.addEventListener("mousemove", (e) => {
-        mouseX = e.clientX;
-        mouseY = e.clientY;
 
-        cursorDot.style.left = mouseX + "px";
-        cursorDot.style.top = mouseY + "px";
-    });
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    cursorDot.style.transform =
+        `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
+
+});
 
     // Smooth Animation
-    function animateCursor() {
+    function animateCursor(){
 
-        outlineX += (mouseX - outlineX) * 0.18;
-        outlineY += (mouseY - outlineY) * 0.18;
+        outlineX += (mouseX - outlineX) * 0.15;
+        outlineY += (mouseY - outlineY) * 0.15;
 
-        cursorOutline.style.left = outlineX + "px";
-        cursorOutline.style.top = outlineY + "px";
+        cursorOutline.style.transform =
+        `translate(${outlineX}px, ${outlineY}px) translate(-50%, -50%)`;
 
         requestAnimationFrame(animateCursor);
+
     }
 
     animateCursor();
