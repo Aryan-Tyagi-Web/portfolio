@@ -2,11 +2,7 @@
         PREMIUM CUSTOM CURSOR
 =========================================*/
 
-const isTouch =
-'ontouchstart' in window ||
-navigator.maxTouchPoints > 0;
-
-if(!isTouch){
+if (window.matchMedia("(pointer:fine)").matches) {
 
     const dot = document.querySelector(".cursor-dot");
     const ring = document.querySelector(".cursor-ring");
