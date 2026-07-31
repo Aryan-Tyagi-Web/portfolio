@@ -700,7 +700,7 @@ font-size:28px;
     text-align:center;
     gap:25px;
     padding:80px 20px 30px;
-    min-height: calc(var(--vh) * 100 - 80px);
+     min-height:calc(100dvh - 80px);
     }
 
     .hero-left,
@@ -939,5 +939,24 @@ body.menu-open{
     height:100vh;
 
     touch-action:none;
+
+}
+
+@media (max-width:768px){
+
+html,
+body{
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+
+body{
+    min-height:100dvh;
+}
+
+.hero{
+    min-height:calc(100dvh - 80px);
+    overflow:hidden;
+}
 
 }
