@@ -2,55 +2,77 @@
         PREMIUM CUSTOM CURSOR
 =========================================*/
 
-if (window.matchMedia("(pointer:fine)").matches) {
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Disable on touch devices
+    if (window.matchMedia("(hover: none)").matches) return;
 
     const dot = document.querySelector(".cursor-dot");
     const ring = document.querySelector(".cursor-ring");
 
-    let mouseX = 0;
-let mouseY = 0;
+    if (!dot || !ring) {
+        console.error("Cursor elements not found.");
+        return;
+    }
 
-let ringX = 0;
-let ringY = 0;
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
 
-document.addEventListener("mousemove",(e)=>{
+    let ringX = mouseX;
+    let ringY = mouseY;
 
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+    // Hide native cursor
+    document.body.style.cursor = "none";
 
-});
+    // Mouse move
+    document.addEventListener("mousemove", (e) => {
 
-function animate(){
+        mouseX = e.clientX;
+        mouseY = e.clientY;
 
-    ringX += (mouseX-ringX)*0.15;
-    ringY += (mouseY-ringY)*0.15;
+        dot.style.transform =
+            `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
 
-    document.querySelector(".cursor-dot").style.transform =
-    `translate(${mouseX}px,${mouseY}px) translate(-50%,-50%)`;
+    });
 
-    document.querySelector(".cursor-ring").style.transform =
-    `translate(${ringX}px,${ringY}px) translate(-50%,-50%)`;
+    // Smooth animation
+    function animate() {
 
-    requestAnimationFrame(animate);
+        ringX += (mouseX - ringX) * 0.18;
+        ringY += (mouseY - ringY) * 0.18;
 
-}
+        ring.style.transform =
+            `translate(${ringX}px, ${ringY}px) translate(-50%, -50%)`;
 
-animate();
+        requestAnimationFrame(animate);
 
-    const hoverItems = document.querySelectorAll(
-        "a,button,.btn-primary,.btn-secondary,.project-card,.service-card,.stat-box,.tech-card,.menu-toggle"
-    );
+    }
 
-    hoverItems.forEach(item=>{
+    animate();
 
-        item.addEventListener("mouseenter",()=>{
+    // Hover targets
+    const hoverItems = document.querySelectorAll(`
+        a,
+        button,
+        .btn-primary,
+        .btn-secondary,
+        .project-card,
+        .service-card,
+        .tech-card,
+        .stat-box,
+        .menu-toggle
+    `);
+
+    hoverItems.forEach(item => {
+
+        item.addEventListener("mouseenter", () => {
 
             ring.classList.add("active");
             dot.classList.add("active");
 
         });
 
-        item.addEventListener("mouseleave",()=>{
+        item.addEventListener("mouseleave", () => {
 
             ring.classList.remove("active");
             dot.classList.remove("active");
@@ -59,4 +81,4 @@ animate();
 
     });
 
-}
+});
