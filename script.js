@@ -1,3 +1,5 @@
+let scrollPosition = 0;
+
 const menuOverlay = document.querySelector(".menu-overlay");
 
 window.onbeforeunload = function () {
@@ -14,14 +16,32 @@ const navMenu = document.querySelector("nav ul");
 
 menuToggle.addEventListener("click", () => {
 
+    const isOpening = !navMenu.classList.contains("active");
+
+    if(isOpening){
+
+        scrollPosition = window.scrollY;
+
+        document.body.style.position = "fixed";
+        document.body.style.top = `-${scrollPosition}px`;
+        document.body.style.width = "100%";
+
+    }else{
+
+        document.body.style.position = "";
+        document.body.style.top = "";
+        document.body.style.width = "";
+
+        window.scrollTo(0, scrollPosition);
+
+    }
+
     navMenu.classList.toggle("active");
     menuToggle.classList.toggle("active");
     menuOverlay.classList.toggle("active");
-
     document.body.classList.toggle("menu-open");
 
 });
-
 
 const navLinks = document.querySelectorAll("nav ul a");
 
