@@ -487,11 +487,24 @@ cursor:pointer;
 }
 
 .stat-box h2{
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    gap:2px;
+    line-height:1;
+}
 
-    font-size:45px;
+.counter{
+    font-size:56px;
+    font-weight:700;
+    color:#3B82F6;
+}
 
-    color:#38bdf8;
-
+.suffix{
+    font-size:30px;
+    font-weight:700;
+    color:#3B82F6;
+    margin-bottom:6px;
 }
 
 .stat-box p{
