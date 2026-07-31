@@ -977,3 +977,11 @@ body{
     object-fit:cover;
     display:block;
 }
+
+.hero-left h2 .shopify{
+    color:#95BF47 !important;
+}
+
+.hero-left h2 .wordpress{
+    color:#21759B !important;
+}
