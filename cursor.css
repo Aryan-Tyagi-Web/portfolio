@@ -1,0 +1,66 @@
+/* Hide default cursor on desktop */
+@media (hover: hover) {
+
+    body{
+        cursor:none;
+    }
+
+    a,
+    button,
+    input,
+    textarea,
+    select,
+    .btn-primary,
+    .btn-secondary,
+    .project-card{
+        cursor:none;
+    }
+
+    .cursor-dot{
+        position:fixed;
+        top:0;
+        left:0;
+        width:8px;
+        height:8px;
+        background:#ffffff;
+        border-radius:50%;
+        pointer-events:none;
+        z-index:999999;
+        transform:translate(-50%,-50%);
+    }
+
+    .cursor-ring{
+        position:fixed;
+        top:0;
+        left:0;
+        width:34px;
+        height:34px;
+        border:2px solid rgba(255,255,255,.7);
+        border-radius:50%;
+        pointer-events:none;
+        z-index:999998;
+        transform:translate(-50%,-50%);
+        transition:
+        width .25s,
+        height .25s,
+        border-color .25s,
+        background .25s;
+    }
+
+    .cursor-ring.hover{
+        width:56px;
+        height:56px;
+        background:rgba(255,255,255,.08);
+        border-color:#fff;
+    }
+
+}
+
+@media (hover:none){
+
+    .cursor-dot,
+    .cursor-ring{
+        display:none;
+    }
+
+}
