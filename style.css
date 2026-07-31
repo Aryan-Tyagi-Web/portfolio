@@ -992,9 +992,26 @@ body{
     font-weight:inherit;
 }
 
-.stat-icon{
-    font-size:34px;
-    margin-bottom:18px;
-    color:#3b82f6;
-    display:block;
+/* Live Projects */
+.stat-box:nth-child(1) .stat-icon{
+    color:#4da3ff;
+    text-shadow:0 0 18px rgba(77,163,255,.5);
+}
+
+/* Shopify */
+.stat-box:nth-child(2) .stat-icon{
+    color:#95BF47;
+    text-shadow:0 0 18px rgba(149,191,71,.5);
+}
+
+/* WordPress */
+.stat-box:nth-child(3) .stat-icon{
+    color:#21759B;
+    text-shadow:0 0 18px rgba(33,117,155,.5);
+}
+
+/* Responsive */
+.stat-box:nth-child(4) .stat-icon{
+    color:#00D4FF;
+    text-shadow:0 0 18px rgba(0,212,255,.5);
 }
