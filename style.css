@@ -98,7 +98,7 @@ nav ul li a:hover::after{
 }
 
 .hero{
-    min-height:calc(100vh - 88px);
+    min-height: calc(var(--vh) * 100 - 90px);
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -700,7 +700,7 @@ font-size:28px;
     text-align:center;
     gap:25px;
     padding:80px 20px 30px;
-    min-height: calc(100dvh - 80px);
+    min-height: calc(var(--vh) * 100 - 80px);
     }
 
     .hero-left,
