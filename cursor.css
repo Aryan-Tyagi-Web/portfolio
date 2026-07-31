@@ -48,6 +48,8 @@ body{
     height:42px;
     border-radius:50%;
     border:2px solid #ffffff;
+    backdrop-filter:blur(6px);
+    -webkit-backdrop-filter:blur(6px);
     background:transparent;
 }
 
