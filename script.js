@@ -101,27 +101,7 @@ menuLinks.forEach(link => {
 
     link.addEventListener("click", function(e){
 
-        const href = this.getAttribute("href");
-
-        if(!href.startsWith("#")) return;
-
         e.preventDefault();
-
-        const target = document.querySelector(href);
-
-        if(target){
-
-            target.scrollIntoView({
-                behavior:"smooth"
-            });
-
-            history.replaceState(null, null, " ");
-
-        }
-
-    });
-
-});
 
         const target = document.querySelector(this.getAttribute("href"));
 
