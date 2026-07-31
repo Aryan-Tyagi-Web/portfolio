@@ -192,3 +192,59 @@ window.addEventListener("scroll", () => {
         header.classList.remove("sticky");
     }
 });
+
+/*=========================================
+        HERO PROJECT STACK ROTATION
+=========================================*/
+
+const projectStack = document.querySelector(".project-stack");
+
+if(projectStack){
+
+    let cards = Array.from(projectStack.querySelectorAll(".project-card-stack"));
+
+    const classes = [
+        "card-1",
+        "card-2",
+        "card-3",
+        "card-4",
+        "card-5"
+    ];
+
+    function updateCards(){
+
+        cards.forEach((card,index)=>{
+
+            classes.forEach(c=>card.classList.remove(c));
+
+            card.classList.add(classes[index]);
+
+        });
+
+    }
+
+    updateCards();
+
+    let autoRotate = setInterval(rotateCards,3000);
+
+    function rotateCards(){
+
+        cards.push(cards.shift());
+
+        updateCards();
+
+    }
+
+    projectStack.addEventListener("mouseenter",()=>{
+
+        clearInterval(autoRotate);
+
+    });
+
+    projectStack.addEventListener("mouseleave",()=>{
+
+        autoRotate = setInterval(rotateCards,3000);
+
+    });
+
+}

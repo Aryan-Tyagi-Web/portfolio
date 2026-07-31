@@ -194,36 +194,252 @@ nav ul li a:hover::after{
     align-items:center;
 }
 
-.circle{
-    width:420px;
-    height:420px;
-    border-radius:50%;
-    background:linear-gradient(135deg,#38bdf8,#7c3aed);
+/*=========================================
+      HERO PROJECT STACK
+=========================================*/
 
-    box-shadow:
-    0 0 40px rgba(56,189,248,.30),
-    0 0 80px rgba(124,58,237,.30),
-    0 0 120px rgba(56,189,248,.20);
+.hero-right{
 
-    animation:float 4s ease-in-out infinite;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:50%;
+    position:relative;
 }
 
-@keyframes float{
+.project-stack{
+
+    position:relative;
+    width:520px;
+    height:520px;
+
+}
+
+.project-card-stack{
+
+    position:absolute;
+
+    width:380px;
+    height:245px;
+
+    left:50%;
+    top:50%;
+
+    transform-origin:center;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    box-shadow:
+        0 18px 50px rgba(0,0,0,.45);
+
+    transition:
+        transform .8s ease,
+        opacity .8s ease,
+        filter .8s ease;
+
+    animation:floatCard 5s ease-in-out infinite;
+
+    will-change: transform;
+    cursor:pointer;
+
+}
+
+.project-card-stack img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+
+}
+
+/*==========================
+      CARD POSITIONS
+===========================*/
+
+.card-1{
+
+    transform:
+        translate(-50%,-50%)
+        rotate(-8deg)
+        translateY(0);
+
+    z-index:5;
+
+}
+
+.card-2{
+
+    transform:
+        translate(-50%,-50%)
+        rotate(5deg)
+        translate(35px,28px)
+        scale(.94);
+
+    z-index:4;
+
+    opacity:.95;
+
+}
+
+.card-3{
+
+    transform:
+        translate(-50%,-50%)
+        rotate(-12deg)
+        translate(-40px,55px)
+        scale(.88);
+
+    z-index:3;
+
+    opacity:.85;
+
+}
+
+.card-4{
+
+    transform:
+        translate(-50%,-50%)
+        rotate(10deg)
+        translate(55px,78px)
+        scale(.82);
+
+    z-index:2;
+
+    opacity:.70;
+
+}
+
+.card-5{
+
+    transform:
+        translate(-50%,-50%)
+        rotate(-15deg)
+        translate(-55px,105px)
+        scale(.76);
+
+    z-index:1;
+
+    opacity:.55;
+
+}
+
+/*==========================
+      FLOAT
+===========================*/
+
+@keyframes floatCard{
 
     0%{
-        transform:translateY(0px);
+
+        margin-top:0;
+
     }
 
     50%{
-        transform:translateY(-15px);
+
+        margin-top:-14px;
+
     }
 
     100%{
-        transform:translateY(0px);
+
+        margin-top:0;
+
     }
 
 }
 
+/*==========================
+      HOVER
+===========================*/
+
+.project-stack:hover .project-card-stack{
+
+    animation-play-state:paused;
+
+}
+
+.project-card-stack:hover{
+
+    transform:
+        translate(-50%,-58%)
+        scale(1.05) !important;
+
+    z-index:99;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.60);
+
+}
+
+/*==========================
+      GLOW
+===========================*/
+
+.project-stack::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:340px;
+    height:340px;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(circle,
+        rgba(56,189,248,.22),
+        rgba(124,58,237,.14),
+        transparent 70%);
+
+    filter:blur(30px);
+
+    z-index:0;
+
+}
+
+/*==========================
+      MOBILE
+===========================*/
+
+@media(max-width:768px){
+
+.hero-right{
+
+width:100%;
+
+}
+
+.project-stack{
+
+width:320px;
+height:320px;
+
+}
+
+.project-card-stack{
+
+width:250px;
+height:165px;
+will-change: transform;
+cursor:pointer;
+
+}
+
+}
 
 /* ==========================
    STATS SECTION
@@ -528,14 +744,6 @@ font-size:28px;
         justify-content:center;
 
         flex-wrap:wrap;
-
-    }
-
-    .circle{
-
-        width:240px;
-
-        height:240px;
 
     }
 
