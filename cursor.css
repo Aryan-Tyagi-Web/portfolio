@@ -3,7 +3,7 @@
 ================================ */
 
 body{
-    cursor: none;
+    cursor: auto;
 }
 
 /* Don't hide cursor on touch devices */
