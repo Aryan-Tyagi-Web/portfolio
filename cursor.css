@@ -1,0 +1,75 @@
+/* Disable on touch devices */
+@media (hover: none), (pointer: coarse){
+    .cursor-dot,
+    .cursor-ring{
+        display:none !important;
+    }
+
+    body{
+        cursor:auto;
+    }
+}
+
+@media (hover:hover){
+
+body{
+    cursor:none;
+}
+
+.cursor-dot{
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+    background:#3B82F6;
+
+    pointer-events:none;
+    z-index:999999;
+
+    transform:translate(-50%,-50%);
+}
+
+.cursor-ring{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:34px;
+    height:34px;
+
+    border:2px solid rgba(59,130,246,.75);
+    border-radius:50%;
+
+    pointer-events:none;
+
+    z-index:999998;
+
+    transform:translate(-50%,-50%);
+
+    transition:
+        width .25s ease,
+        height .25s ease,
+        border-color .25s ease,
+        background .25s ease;
+}
+
+.cursor-ring.active{
+
+    width:58px;
+    height:58px;
+
+    border-color:#38BDF8;
+
+    background:rgba(56,189,248,.08);
+}
+
+.cursor-dot.active{
+    transform:translate(-50%,-50%) scale(.8);
+}
+
+}
