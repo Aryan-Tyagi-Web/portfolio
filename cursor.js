@@ -2,7 +2,7 @@
         PREMIUM CUSTOM CURSOR
 =========================================*/
 
-if(window.matchMedia("(hover:hover)").matches){
+if(window.innerWidth > 768){
 
     const dot = document.querySelector(".cursor-dot");
     const ring = document.querySelector(".cursor-ring");
