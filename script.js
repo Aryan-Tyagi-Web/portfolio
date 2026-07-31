@@ -1,3 +1,16 @@
+const dot = document.querySelector(".cursor-dot");
+const ring = document.querySelector(".cursor-ring");
+
+document.addEventListener("mousemove", (e) => {
+
+    dot.style.left = e.clientX + "px";
+    dot.style.top = e.clientY + "px";
+
+    ring.style.left = e.clientX + "px";
+    ring.style.top = e.clientY + "px";
+
+});
+
 const menuOverlay = document.querySelector(".menu-overlay");
 
 window.onbeforeunload = function () {
@@ -182,16 +195,3 @@ const counterObserver = new IntersectionObserver((entries) => {
 });
 
 counters.forEach(counter => counterObserver.observe(counter));
-
-const dot = document.querySelector(".cursor-dot");
-const ring = document.querySelector(".cursor-ring");
-
-document.addEventListener("mousemove", (e) => {
-
-    dot.style.left = e.clientX + "px";
-    dot.style.top = e.clientY + "px";
-
-    ring.style.left = e.clientX + "px";
-    ring.style.top = e.clientY + "px";
-
-});
