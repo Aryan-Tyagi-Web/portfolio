@@ -1,6 +1,9 @@
 const dot = document.querySelector(".cursor-dot");
 const ring = document.querySelector(".cursor-ring");
 
+console.log(dot);
+console.log(ring);
+
 if(dot && ring){
 
     let mouseX = window.innerWidth / 2;
