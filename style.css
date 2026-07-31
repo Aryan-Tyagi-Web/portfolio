@@ -695,19 +695,12 @@ font-size:28px;
     /* Hero */
 
     .hero{
-
-        flex-direction:column-reverse;
-
-        justify-content:center;
-
-        text-align:center;
-
-        gap:40px;
-
-        padding:40px 20px;
-
-        min-height:auto;
-
+    flex-direction:column-reverse;
+    justify-content:center;
+    text-align:center;
+    gap:25px;
+    padding:80px 20px 40px;
+    min-height:100vh;
     }
 
     .hero-left,
