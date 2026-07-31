@@ -18,14 +18,6 @@ menuToggle.addEventListener("click", () => {
     menuToggle.classList.toggle("active");
     menuOverlay.classList.toggle("active");
 
-    document.body.classList.toggle("menu-open");
-
-    if(navMenu.classList.contains("active")){
-        document.body.style.overflow = "hidden";
-    }else{
-        document.body.style.overflow = "";
-    }
-
 });
 
 
