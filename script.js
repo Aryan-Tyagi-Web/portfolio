@@ -182,3 +182,128 @@ const counterObserver = new IntersectionObserver((entries) => {
 });
 
 counters.forEach(counter => counterObserver.observe(counter));
+
+/* ==========================================
+   PREMIUM CUSTOM CURSOR
+========================================== */
+
+const cursorDot = document.querySelector(".cursor-dot");
+const cursorOutline = document.querySelector(".cursor-outline");
+
+if (cursorDot && cursorOutline) {
+
+    let mouseX = 0;
+    let mouseY = 0;
+
+    let outlineX = 0;
+    let outlineY = 0;
+
+    // Mouse Position
+    window.addEventListener("mousemove", (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+
+        cursorDot.style.left = mouseX + "px";
+        cursorDot.style.top = mouseY + "px";
+    });
+
+    // Smooth Animation
+    function animateCursor() {
+
+        outlineX += (mouseX - outlineX) * 0.18;
+        outlineY += (mouseY - outlineY) * 0.18;
+
+        cursorOutline.style.left = outlineX + "px";
+        cursorOutline.style.top = outlineY + "px";
+
+        requestAnimationFrame(animateCursor);
+    }
+
+    animateCursor();
+
+    // Click Effect
+    document.addEventListener("mousedown", () => {
+        cursorDot.classList.add("cursor-click");
+        cursorOutline.classList.add("cursor-click");
+    });
+
+    document.addEventListener("mouseup", () => {
+        cursorDot.classList.remove("cursor-click");
+        cursorOutline.classList.remove("cursor-click");
+    });
+
+    // Hover Elements
+    const hoverElements = document.querySelectorAll(`
+        a,
+        button,
+        .btn,
+        .btn-primary,
+        .btn-secondary,
+        .project-link,
+        .social-links a,
+        nav a,
+        .menu-toggle
+    `);
+
+    hoverElements.forEach(el => {
+
+        el.addEventListener("mouseenter", () => {
+            cursorDot.classList.add("cursor-hover");
+            cursorOutline.classList.add("cursor-hover");
+        });
+
+        el.addEventListener("mouseleave", () => {
+            cursorDot.classList.remove("cursor-hover");
+            cursorOutline.classList.remove("cursor-hover");
+        });
+
+    });
+
+    // Image / Cards
+    const imageElements = document.querySelectorAll(`
+        img,
+        .project-card,
+        .service-card
+    `);
+
+    imageElements.forEach(el => {
+
+        el.addEventListener("mouseenter", () => {
+            cursorDot.classList.add("cursor-image");
+            cursorOutline.classList.add("cursor-image");
+        });
+
+        el.addEventListener("mouseleave", () => {
+            cursorDot.classList.remove("cursor-image");
+            cursorOutline.classList.remove("cursor-image");
+        });
+
+    });
+
+    // Hide Cursor while Leaving Window
+    document.addEventListener("mouseleave", () => {
+        cursorDot.classList.add("cursor-hide");
+        cursorOutline.classList.add("cursor-hide");
+    });
+
+    document.addEventListener("mouseenter", () => {
+        cursorDot.classList.remove("cursor-hide");
+        cursorOutline.classList.remove("cursor-hide");
+    });
+
+    // Hide on Text Fields
+    document.querySelectorAll("input, textarea").forEach(el => {
+
+        el.addEventListener("mouseenter", () => {
+            cursorDot.classList.add("cursor-hide");
+            cursorOutline.classList.add("cursor-hide");
+        });
+
+        el.addEventListener("mouseleave", () => {
+            cursorDot.classList.remove("cursor-hide");
+            cursorOutline.classList.remove("cursor-hide");
+        });
+
+    });
+
+}
