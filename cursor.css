@@ -1,0 +1,40 @@
+@media (hover:hover){
+
+*{
+    cursor:none;
+}
+
+.cursor{
+    position:fixed;
+    top:0;
+    left:0;
+    pointer-events:none;
+    z-index:999999;
+    will-change:transform;
+}
+
+.cursor__ring{
+    position:absolute;
+    width:34px;
+    height:34px;
+    border:2px solid #4d7cff;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+}
+
+.cursor__dot{
+    position:absolute;
+    width:8px;
+    height:8px;
+    background:#fff;
+    border-radius:50%;
+    transform:translate(-50%,-50%);
+}
+
+}
+
+@media (hover:none){
+.cursor{
+display:none;
+}
+}
