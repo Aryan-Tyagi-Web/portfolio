@@ -1024,3 +1024,22 @@ body{
     color:#00D4FF;
     text-shadow:0 0 18px rgba(0,212,255,.5);
 }
+
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.counter .number{
+    font-size: 56px;   /* Number bada */
+}
+
+.counter .symbol{
+    font-size: 28px;   /* + aur % chhote */
+    line-height: 1;
+    margin-top: 6px;   /* Thoda upar shift */
+}
