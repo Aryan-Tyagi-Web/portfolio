@@ -981,9 +981,13 @@ body{
 .hero-left h2 .shopify{
     color:#95BF47 !important;
     background:none;
+    font:inherit;
+    font-weight:inherit;
 }
 
 .hero-left h2 .wordpress{
     color:#21759B !important;
     background:none;
+    font:inherit;
+    font-weight:inherit;
 }
