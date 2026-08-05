@@ -1,37 +1,53 @@
 # 👋 Aryan Tyagi Portfolio
 
-A modern **Shopify & WordPress Developer Portfolio** showcasing my live client projects, development skills, and web solutions.
+<p align="center">
 
-🌐 **Live Website:** https://portfolio-2c6.pages.dev/
+<img src="assets/images/logo_trimmed.png" width="120">
+
+</p>
+
+<h2 align="center">
+Shopify & WordPress Developer
+</h2>
+
+<p align="center">
+Modern • Responsive • SEO Friendly • Conversion Focused Websites
+</p>
 
 ---
 
+## 🌐 Live Website
 
-## 🚀 About
-
-This portfolio showcases my experience in building modern, responsive, SEO-friendly and conversion-focused websites using Shopify, WordPress and Elementor.
-
-It includes my live client projects, technical skills, services, resume and contact information.
+👉 https://portfolio-2c6.pages.dev/
 
 ---
 
-## ✨ Features
+# 🚀 About
+
+This portfolio showcases my professional Shopify and WordPress development work.
+
+It highlights live client projects, modern UI designs, responsive layouts, SEO-friendly websites and conversion-focused development.
+
+---
+
+# ✨ Features
 
 - Responsive Design
-- Modern UI/UX
 - Shopify Development
 - WordPress Development
 - Elementor Websites
-- SEO Friendly Structure
+- Landing Pages
+- Website Optimization
 - FAQ Section
-- Google Analytics Integration
-- Microsoft Clarity Integration
-- Contact & WhatsApp CTA
-- Resume Download
+- Google Analytics
+- Microsoft Clarity
+- SEO Optimized
 - Smooth Animations
+- Resume Download
 
+---
 
-## 🛠 Tech Stack
+# 🛠 Tech Stack
 
 - HTML5
 - CSS3
@@ -41,27 +57,26 @@ It includes my live client projects, technical skills, services, resume and cont
 - Elementor
 - Git
 - GitHub
-- Google Analytics
-- Microsoft Clarity
 
+---
 
-## 🌟 Featured Projects
+# 🌟 Featured Projects
 
-- Product Page World
-- Shandilya Hotels
-- Rover Inn
-- VINR
-- Shree Home Decor
-- Traffic Media
-- Jenco Decor
-- Ankshaktiyaan
-- Rashi Guru
+| Project | Platform |
+|---------|----------|
+| Rover Inn | HTML/CSS/JS |
+| Shandilya Hotels | WordPress |
+| VINR | Shopify |
+| Product Page World | WordPress |
+| Traffic Media | WordPress |
+| Jenco Decor | WordPress |
+| Rashi Guru | Shopify |
+| Shree Home Decor | Shopify |
+| Ankshaktiyaan | WordPress |
 
-## 🌐 Live Demo
+---
 
-👉 https://portfolio-2c6.pages.dev/
-
-## 📂 Folder Structure
+# 📂 Folder Structure
 
 ```text
 portfolio/
@@ -81,22 +96,33 @@ portfolio/
 ├── footer.css
 ├── cursor.css
 ├── script.js
-├── README.md
+├── robots.txt
+├── sitemap.xml
+└── README.md
 ```
 
+---
 
-## 📬 Contact
+# 📬 Contact
 
-📧 Email: tyagiaryannda@gmail.com
+📧 Email
 
-💼 LinkedIn:
-https://www.linkedin.com/in/aryan-tyagi-51640a218/
+> tyagiaryannda@gmail.com
 
-💻 GitHub:
-https://github.com/Aryan-Tyagi-Web
+💼 LinkedIn
 
-## 📄 License
+> https://linkedin.com/in/aryan-tyagi-51640a218
 
-This project is licensed under the MIT License.
+💻 GitHub
 
-⭐ If you like this project, don't forget to star the repository.
+> https://github.com/Aryan-Tyagi-Web
+
+🌐 Portfolio
+
+> https://portfolio-2c6.pages.dev/
+
+---
+
+# ⭐ If you like this project
+
+Please consider giving it a ⭐ on GitHub.
