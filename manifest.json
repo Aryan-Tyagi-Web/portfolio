@@ -1,0 +1,22 @@
+{
+  "name": "Aryan Tyagi Portfolio",
+  "short_name": "Aryan Portfolio",
+  "description": "Shopify & WordPress Developer Portfolio",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "assets/images/logo_trimmed.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/logo_trimmed.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
